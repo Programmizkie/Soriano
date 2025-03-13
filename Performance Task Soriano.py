@@ -168,3 +168,23 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+. What does the Term function do?
+The term function purpose for me when analyzing the code is that it checks the syntax if the 
+current token is in the multiplication or division operator. If the token is in multiplication, the 
+function will multiply the result. If the token is in division, the function will divide the result.
+2. What does the Factor function do, compared to the Term function?
+Term function and factor function are connected to each other since the term function’s purpose 
+is to analyze if the current token is in division or multiplication while for the factor function 
+tokenizes the current token in order to eat the value.
+3. What changes were made to the Expr function? And how does it related to the Term and Factor 
+functions?
+Expr function is related to term and factor function since it also checks what are the correct 
+precedence or in in order its like following the MDAS rule by multiplying and dividing first 
+before adding and subtracting.
+4. Is operator precedence followed in the code? If no, why? If yes, how?
+Yes, when you try to input a value it will first apply the term function before the expr function 
+since it has a rules to follow just like MDAS rule
+5. What does it mean for an operator to be left-associative?
+When there are multiple operators appear it will read the operands first from left to right and 
+follows the rules in which what are the operator precedence need to follow first.
